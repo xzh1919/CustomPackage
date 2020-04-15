@@ -2,8 +2,8 @@
     "name": "com.me.framework",
     "displayName": "Me Framework",
     "description": "Me Framework!!!",
-    "version": "0.0.2",
-    "unity": "2020.04",
+    "version": "0.0.3",
+    "unity": "2018.3",
     "license": "MIT",
     "dependencies": {}
 }
