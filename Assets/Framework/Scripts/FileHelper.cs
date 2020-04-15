@@ -22,6 +22,6 @@ public class FileHelper
 
     public static void Test()
     {
-
+        Debug.Log("Test");
     }
 }
