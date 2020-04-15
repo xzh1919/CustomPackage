@@ -4,3 +4,4 @@ Logs
 *.sln
 .vscode
 obj
+Temp
