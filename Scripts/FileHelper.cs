@@ -19,4 +19,9 @@ public class FileHelper
 
         return Directory.GetFiles(path, pattern, option);
     }
+
+    public static void Test()
+    {
+
+    }
 }
