@@ -2,3 +2,5 @@ Library
 Logs
 *.csproj
 *.sln
+.vscode
+obj
