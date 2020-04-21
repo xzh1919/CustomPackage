@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class FileHelper
+namespace MeEngine
 {
-    public static string[] GetFiles(string path, string pattern = "*.*", SearchOption option = SearchOption.AllDirectories)
+    public class FileHelper
     {
-        if (!Directory.Exists(path))
+        public static string[] GetFiles(string path, string pattern = "*.*", SearchOption option = SearchOption.AllDirectories)
         {
-            return new string[] { };
+            if (!Directory.Exists(path))
+            {
+                return new string[] { };
+            }
+
+            if (string.IsNullOrEmpty(pattern))
+            {
+                pattern = "*.*";
+            }
+
+            return Directory.GetFiles(path, pattern, option);
         }
 
-        if (string.IsNullOrEmpty(pattern))
+        public static void Test()
         {
-            pattern = "*.*";
+            Debug.Log("Test");
         }
-
-        return Directory.GetFiles(path, pattern, option);
-    }
-
-    public static void Test()
-    {
-        Debug.Log("Test");
     }
 }
