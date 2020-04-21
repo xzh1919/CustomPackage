@@ -2,4 +2,4 @@
 
 git add .
 git commit -m fix
-git push orign/master --all
+git push master --all
